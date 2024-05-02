@@ -1,8 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+    experience: "",
+    searchedCompany: "",
+    searchedLocation: "",
+    jobType: "",
+    techStacks: [],
     roles: [],
-    
+    salary: "",
 };
 export const querySlice = createSlice({
     name: "query",

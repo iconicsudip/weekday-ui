@@ -19,3 +19,7 @@ select{
 .MuiButtonBase-root.MuiMenuItem-root{
     font-size: var(--sp-md) !important;
 }
+.MuiChip-root{
+    height: 22px!important;
+    font-size: 12px!important;
+}
