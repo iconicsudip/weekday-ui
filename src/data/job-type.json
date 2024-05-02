@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "type": "Remote",
+        "value": "remote"
+    },
+    {
+        "id": "2",
+        "type": "Onsite",
+        "value": "onsite"
+    }
+]

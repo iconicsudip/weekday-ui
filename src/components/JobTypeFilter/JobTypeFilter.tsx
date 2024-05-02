@@ -2,18 +2,21 @@ import { FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEven
 import { useEffect, useState } from 'react'
 import { TbX } from 'react-icons/tb'
 import { useDispatch } from 'react-redux'
+import jobTypes from '../../data/job-type.json'
 import { setQuery } from '../../store/slices/querySlice'
 
-const jobTypes = [{
-    id:'1',
-    type:'Remote',
-    value:'remote'
-},
-{
-    id:'2',
-    type: 'Onsite',
-    value:'onsite'
-}]
+/**
+ * This component is used to filter the job type of the job
+ * 
+ * @constant jobType - The type of the job
+ * @function setJobType - A function to set the type of the job
+ * @function dispatch - A function to dispatch an action to the redux store
+ * @function handleChange - A function to handle the change in the job type filter
+ * @function handleDelete - A function to handle the deletion of the job type filter
+ * 
+ * @returns 
+ */
+
 export default function JobTypeFilter() {
     const [jobType, setJobType] = useState('')
     const dispatch = useDispatch()

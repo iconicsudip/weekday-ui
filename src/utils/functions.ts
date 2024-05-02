@@ -1,3 +1,9 @@
+/**
+ * This function is used to get the currency symbol
+ * @param currency  - The currency of the country
+ * @returns 
+ */
+
 export const getCurrecySymbol = (currency: string) => {
     switch (currency) {
         case 'USD':

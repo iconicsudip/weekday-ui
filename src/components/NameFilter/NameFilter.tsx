@@ -5,6 +5,17 @@ import useDebounce from '../../hooks/useDebounce'
 import { useDispatch } from 'react-redux'
 import { setQuery } from '../../store/slices/querySlice'
 
+/**
+ * This component is used to filter the name of the company
+ * 
+ * @constant name - The name of the company
+ * @function setName - A function to set the name of the company
+ * @function debouncedText - A function to debounce the text
+ * @function dispatch - A function to dispatch an action to the redux store
+ * 
+ * @returns 
+ */
+
 export default function NameFilter() {
     const [name, setName] = useState('')
     const debouncedText = useDebounce(name)

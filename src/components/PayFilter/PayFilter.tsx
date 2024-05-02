@@ -5,6 +5,18 @@ import basePay from '../../data/base-pay.json'
 import { useDispatch } from 'react-redux'
 import { setQuery } from '../../store/slices/querySlice'
 
+/**
+ * This component is used to filter the pay of the job
+ * 
+ * @constant minimumPay - The minimum pay of the job
+ * @function setMinimumPay - A function to set the minimum pay of the job
+ * @function dispatch - A function to dispatch an action to the redux store
+ * @function handleChange - A function to handle the change in the pay filter
+ * @function handleDelete - A function to handle the deletion of the pay filter
+ * 
+ * @returns 
+ */
+
 
 export default function PayFilter() {
     const [minimumPay, setMinimumPay] = useState<string>("")

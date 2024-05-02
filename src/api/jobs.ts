@@ -1,4 +1,10 @@
 
+/**
+ * Fetches jobs from the API
+ * @param page - The page number
+ * @param limit - The number of jobs per page by default 10
+ */
+
 const BASE_URL = import.meta.env.VITE_APP_API_URL
 
 export const getJobs = async (page: number,limit: number = 10) => {

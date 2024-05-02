@@ -1,3 +1,7 @@
+/*** 
+    override material-ui styles by using the class name
+***/
+
 .MuiSelect-select{
     width: calc(100% - 90px) !important;
 }

@@ -7,6 +7,11 @@ import TechStackFilter from '../../../../components/TechStackFilter'
 import RolesFilter from '../../../../components/RolesFilter'
 import PayFilter from '../../../../components/PayFilter'
 
+/**
+ * This component is used to filter the jobs
+ * @returns 
+ */
+
 export default function Filters() {
     return (
         <div className={styles.filters}>

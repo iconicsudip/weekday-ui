@@ -2,9 +2,23 @@ import { Chip, FormControl, IconButton, InputLabel, MenuItem, OutlinedInput, Sel
 import React, { useEffect, useState } from 'react'
 import { TbX } from 'react-icons/tb'
 import allRoles from '../../data/roles.json'
-import { MenuProps } from '../../constant/chip.constant'
+import { MenuProps } from '../../constant/select.constant'
 import { useDispatch } from 'react-redux'
 import { setQuery } from '../../store/slices/querySlice'
+
+
+/**
+ * This component is used to filter the roles of the job
+ * 
+ * @constant roles - The roles of the job
+ * @function setRoles - A function to set the roles of the job
+ * @function dispatch - A function to dispatch an action to the redux store
+ * @function handleChange - A function to handle the change in the roles filter
+ * @function handleDelete - A function to handle the deletion of the roles filter
+ * @function handleRemove - A function to remove all the roles
+ * 
+ * @returns 
+ */
 
 
 export default function RolesFilter() {
@@ -30,7 +44,7 @@ export default function RolesFilter() {
         }))
     }, [roles])
     return (
-        <FormControl sx={{ width:"100%" }} size="small">
+        <FormControl sx={{ width: "100%" }} size="small">
             <InputLabel id="demo-multiple-chip-label">Roles</InputLabel>
             <Select
 

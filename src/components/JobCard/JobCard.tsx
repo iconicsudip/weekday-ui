@@ -4,6 +4,13 @@ import { T_Job } from '../../types/job'
 import { Link } from 'react-router-dom'
 import { getCurrecySymbol } from '../../utils/functions'
 
+/**
+ * @typedef {Object} Props
+ * @property {T_Job} job
+ * This is a JobCard component. This component is used to display the job card.
+ * @param {Props} props
+ */
+
 interface Props {
     job: T_Job
 }

@@ -8,6 +8,27 @@ import { getJobs } from '../../../../api/jobs';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../store';
 
+/**
+ * This component is used to display the jobs
+ * @constant filterDetails - The details of the filters applied to the jobs from the redux store
+ * @constant showError - A boolean to check if there is an error
+ * @function setShowError - A function to set the error
+ * @constant allJobs - The list of all the jobs
+ * @function setAllJobs - A function to set the list of all the jobs
+ * @constant tempAllJobs - The list of all the jobs temporarily so that the original list is not affected
+ * @function setTempAllJobs - A function to set the list of all the jobs temporarily
+ * @constant loading - A boolean to check if the jobs are loading
+ * @function setLoading - A function to set the loading
+ * @constant page - The page number
+ * @function setPage - A function to set the page number
+ * @constant total - The total number of jobs
+ * @function setTotal - A function to set the total number of jobs
+ * @constant lastPostRef - A reference to the last jobPost to implement infinite scrolling
+ * @function handleClose - A function to handle the closing of the error
+ * 
+ * @returns 
+ */
+
 export default function JobSection() {
     const filterDetails = useSelector((state:RootState)=>state.queryDetails)
     const [showError, setShowError] = useState<boolean>(false);
@@ -16,7 +37,7 @@ export default function JobSection() {
     const [loading, setLoading] = useState<boolean>(false);
     const [page, setPage] = useState<number>(0);
     const [total, setTotal] = useState<number>(0);
-    const lastPostRef = useInfiniteScroll(() => {
+    const lastJobPostRef = useInfiniteScroll(() => {
         if (page!==total && !loading) {
             setPage((prevPage) => prevPage + 1);
         }
@@ -100,7 +121,7 @@ export default function JobSection() {
             }
             <div className={styles.jobs} >
                 {allJobs.length > 0 && allJobs.map((job:T_Job) => {
-                    return <div ref={total !== page ? lastPostRef : null}>
+                    return <div ref={total !== page ? lastJobPostRef : null}>
                         <JobCard key={job.jdUid} job={job} />
                     </div>
                 })}
