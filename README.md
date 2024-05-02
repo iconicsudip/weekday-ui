@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+## Weekday Candidate Application Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Candidate Application Platform, a user-friendly platform designed to help job seekers browse job listings, filter jobs based on various criteria, and apply seamlessly. This platform utilizes infinite scroll for a smooth browsing experience, allowing users to explore job opportunities effortlessly.
 
-Currently, two official plugins are available:
+Deployed url - https://weekdayjobs.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
+- TypeScript
+- React.js
+- SCSS module for styling
+  
+### Getting Started
+1. Clone this repository.
+2. Create a `.env` file and use below variables
+    ```
+    VITE_APP_API_URL = 
+    ```
+    Use mentioned api value of this variable `https://api.weekday.technology/adhoc/getSampleJdJSON`
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Run the application:
+    ```bash
+    npm run dev
+    ```
+6. Navigate to `localhost:5173` in your browser to access the application.
 
-## Expanding the ESLint configuration
+### Functionality
+- Job Listings: View job listings from various companies and industries.
+- Filtering: Filter jobs based on criteria such as experience level, location, job type, and more.
+- Infinite Scroll: Seamlessly browse through job listings with infinite scroll, eliminating the need for manual pagination or load more.
+- User-Friendly Interface: Enjoy a user-friendly interface that makes browsing and applying to jobs intuitive and efficient.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Contact details
+- Name - Sudip Das
+- Phone number - 9073383828
+- Email - das366966@gmail.com
+- Linkedin - https://linkedin.com/in/sudipdas80
