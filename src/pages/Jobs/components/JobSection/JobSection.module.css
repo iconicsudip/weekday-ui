@@ -10,3 +10,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.no_jobs{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+}
+.no_jobs img{
+max-width: 200px;
+    height: 200px;
+    width: 100%;
+}

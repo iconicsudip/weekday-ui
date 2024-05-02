@@ -15,8 +15,9 @@ export default function JobCard({ job }: Props) {
                 <img className={styles.logo} src="/weekday.png" alt="logo" />
                 <div className={styles.job}>
                     <Link to={`${job.jdLink}`} target="_blank">
-                        <h3 className={styles.name}>{job.jobRole}</h3>
+                        <h3>Company Name</h3>
                     </Link>
+                    <h5 className={styles.name}>{job.jobRole}</h5>
                     <p className={styles.sub_text}>{job.location}</p>
                 </div>
             </div>
