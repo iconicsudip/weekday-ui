@@ -1,11 +1,14 @@
 import { Chip, FormControl, IconButton, InputLabel, MenuItem, OutlinedInput, Select, SelectChangeEvent } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import techStacks from '../../data/tech-stack.json'
 import { TbX } from "react-icons/tb";
 import { MenuProps } from "../../constant/chip.constant";
+import { useDispatch } from "react-redux";
+import { setQuery } from "../../store/slices/querySlice";
 
 export default function TechStackFilter() {
     const [techStack, setTechStack] = useState<string[]>([])
+    const dispatch = useDispatch()
 
     const handleChange = (event: SelectChangeEvent<any>) => {
         setTechStack(event.target.value)
@@ -19,6 +22,12 @@ export default function TechStackFilter() {
     const handleRemove = () => {
         setTechStack([])
     }
+
+    useEffect(() => {
+        dispatch(setQuery({
+            techStacks: techStack
+        }))
+    }, [techStack])
     return (
         <FormControl sx={{ width: "100%" }} size="small">
             <InputLabel id="demo-multiple-chip-label">Tech Stack</InputLabel>

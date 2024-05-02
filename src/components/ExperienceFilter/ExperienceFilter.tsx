@@ -1,9 +1,12 @@
 import { FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { TbX } from 'react-icons/tb'
+import { useDispatch } from 'react-redux'
+import { setQuery } from '../../store/slices/querySlice'
 
 export default function ExperienceFilter() {
     const [minimumExperience, setMinimumExperience] = useState<string>("")
+    const dispatch = useDispatch()
 
     const handleChange = (event: SelectChangeEvent) => {
         setMinimumExperience(event.target.value)
@@ -12,6 +15,12 @@ export default function ExperienceFilter() {
     const handleDelete = () => {
         setMinimumExperience("")
     }
+
+    useEffect(() => {
+        dispatch(setQuery({
+            experience: minimumExperience.toString()
+        }))
+    }, [minimumExperience])
     return (
         <FormControl sx={{ width: "100%" }} size="small">
             <InputLabel id="demo-simple-select-autowidth-label">Experience</InputLabel>

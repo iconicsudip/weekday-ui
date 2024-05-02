@@ -1,12 +1,15 @@
 import { Chip, FormControl, IconButton, InputLabel, MenuItem, OutlinedInput, Select, SelectChangeEvent } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { TbX } from 'react-icons/tb'
 import allRoles from '../../data/roles.json'
 import { MenuProps } from '../../constant/chip.constant'
+import { useDispatch } from 'react-redux'
+import { setQuery } from '../../store/slices/querySlice'
 
 
 export default function RolesFilter() {
     const [roles, setRoles] = useState<string[]>([])
+    const dispatch = useDispatch()
 
     const handleChange = (event: SelectChangeEvent<any>) => {
         setRoles(event.target.value)
@@ -20,6 +23,12 @@ export default function RolesFilter() {
     const handleRemove = () => {
         setRoles([])
     }
+
+    useEffect(() => {
+        dispatch(setQuery({
+            roles: roles
+        }))
+    }, [roles])
     return (
         <FormControl sx={{ width:"100%" }} size="small">
             <InputLabel id="demo-multiple-chip-label">Roles</InputLabel>

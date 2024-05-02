@@ -1,6 +1,8 @@
 import { FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { TbX } from 'react-icons/tb'
+import { useDispatch } from 'react-redux'
+import { setQuery } from '../../store/slices/querySlice'
 
 const jobTypes = [{
     id:'1',
@@ -14,6 +16,7 @@ const jobTypes = [{
 }]
 export default function JobTypeFilter() {
     const [jobType, setJobType] = useState('')
+    const dispatch = useDispatch()
 
     const handleChange = (event: SelectChangeEvent) => {
         setJobType(event.target.value)
@@ -22,6 +25,12 @@ export default function JobTypeFilter() {
     const handleDelete = () => {
         setJobType('')
     }
+
+    useEffect(() => {
+        dispatch(setQuery({
+            jobType: jobType
+        }))
+    }, [jobType])
 
     return (
         <FormControl sx={{ width: "100%" }} size="small">

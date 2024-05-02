@@ -1,47 +1,57 @@
 [
     {
         "id": "1",
-        "label": "0L",
-        "value": "0L"
+        "label": "0 $",
+        "value": "0"
     },
     {
         "id": "2",
-        "label": "10L",
-        "value": "10L"
+        "label": "10 $",
+        "value": "10"
     },
     {
         "id": "3",
-        "label": "20L",
-        "value": "20L"
+        "label": "20 $",
+        "value": "20"
     },
     {
         "id": "4",
-        "label": "30L",
-        "value": "30L"
+        "label": "30 $",
+        "value": "30 $"
     },
     {
         "id": "5",
-        "label": "40L",
-        "value": "40L"
+        "label": "40 $",
+        "value": "40"
     },
     {
         "id": "6",
-        "label": "50L",
-        "value": "50L"
+        "label": "50 $",
+        "value": "50"
     },
     {
         "id": "7",
-        "label": "60L",
-        "value": "60L"
+        "label": "60 $",
+        "value": "60"
     },
     {
         "id": "8",
-        "label": "70L",
-        "value": "70L"
+        "label": "70 $",
+        "value": "70"
     },
     {
         "id": "9",
-        "label": "80L",
-        "value": "80L"
+        "label": "80 $",
+        "value": "80"
+    },
+    {
+        "id": "10",
+        "label": "90 $",
+        "value": "90"
+    },
+    {
+        "id": "11",
+        "label": "100 $",
+        "value": "100"
     }
 ]

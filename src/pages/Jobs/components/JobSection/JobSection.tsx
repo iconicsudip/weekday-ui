@@ -1,5 +1,5 @@
 import { Alert, CircularProgress } from '@mui/material';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { T_Job } from '../../../../types/job';
 import JobCard from '../../../../components/JobCard';
 import styles from './JobSection.module.css'
@@ -54,7 +54,7 @@ export default function JobSection() {
         fetchData(page)
     }, [page])
     return (
-        <div>
+        <>
             {showError && 
                 <Alert severity="error" onClose={handleClose}>
                     Something went wrong
@@ -72,6 +72,6 @@ export default function JobSection() {
                     <CircularProgress />
                 </div>
             }
-        </div>
+        </>
     )
 }
