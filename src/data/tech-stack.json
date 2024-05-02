@@ -1,0 +1,52 @@
+[
+    {
+        "id":"1",
+        "label": "Python",
+        "value":"python"
+    },
+    {
+        "id":"2",
+        "label": "Java",
+        "value":"java"
+    },
+    {
+        "id":"3",
+        "label": "C++",
+        "value":"c++"
+    },
+    {
+        "id":"4",
+        "label": "C#",
+        "value":"c#"
+    },
+    {
+        "id":"5",
+        "label": "JavaScript",
+        "value":"javascript"
+    },
+    {
+        "id":"6",
+        "label": "Ruby",
+        "value":"ruby"
+    },
+    {
+        "id":"7",
+        "label": "PHP",
+        "value":"php"
+    },
+    {
+        "id":"8",
+        "label": "Kotlin",
+        "value":"kotlin"
+    },
+    {
+        "id":"9",
+        "label": "GoLang",
+        "value":"golang"
+    },
+    {
+        "id":"10",
+        "label": "TypeScript",
+        "value":"typescript"
+    }
+]

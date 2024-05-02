@@ -1,0 +1,22 @@
+[
+    {
+        "id":"1",
+        "label": "Frontend",
+        "value": "frontend"
+    },
+    {
+        "id":"2",
+        "label": "Backend",
+        "value": "backend"
+    },
+    {
+        "id":"3",
+        "label": "Fullstack",
+        "value": "fullstack"
+    },
+    {
+        "id":"4",
+        "label": "React Native",
+        "value": "reactnative"
+    }
+]

@@ -1,0 +1,21 @@
+.MuiSelect-select{
+    width: calc(100% - 90px) !important;
+}
+.MuiOutlinedInput-notchedOutline{
+    border: var(--border);
+}
+.MuiInputLabel-formControl{
+    font-size: var(--sp-md)!important;
+}
+input{
+    font-size: var(--sp-md)!important;
+}
+select{
+    font-size: var(--sp-md)!important;
+}
+.MuiInputBase-root{
+    font-size: var(--sp-md) !important;
+}
+.MuiButtonBase-root.MuiMenuItem-root{
+    font-size: var(--sp-md) !important;
+}

@@ -1,0 +1,45 @@
+@import url('./styles/modified.css');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --page-width:1360px;
+  --primary: #55efc4;
+  --primary-color:#000000de;
+  --link-color: #4943da;
+  --border: 1px solid rgb(204, 204, 204);
+
+  --sp-xs: 4px;
+    --sp-sm: 8px;
+    --sp-md: 12px;
+    --sp-lg: 16px;
+    --sp-xl: 24px;
+  
+    --radi-sm: 4px;
+    --radi-md: 6px;
+    --radi-lg: 8px;
+  
+    --text-h1: 28px;
+    --text-h2: 24px;
+    --text-h3: 20px;
+    --text-h4: 18px;
+    --text-h5: 16px;
+    --text-md: 14px;
+    --text-sm: 13px;
+    --text-xs: 12px;
+}
+a{
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+button{
+  border-radius: var(--radi-lg)!important;
+}

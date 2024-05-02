@@ -1,0 +1,5 @@
+.filters{
+    display: grid;
+    gap: var(--sp-md);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}

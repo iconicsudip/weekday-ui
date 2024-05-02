@@ -1,0 +1,110 @@
+.job_desc {
+    height: 250px;
+    overflow: hidden;
+    mask-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+.desc {
+    white-space: pre-wrap;
+    font-size: 14px;
+    margin: 0;
+}
+
+.company {
+    margin: 0px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.job_card {
+    padding: var(--sp-lg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px !important;
+    border-radius: calc(var(--sp-xl) - 4px) !important;
+}
+
+.show_more {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+    top: calc(var(--sp-lg) * -1);
+    color: var(--link-color);
+    cursor: pointer;
+    font-size: var(--sp-md);
+}
+
+.min_exp .title {
+    font-size: var(--sp-md);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    color: #8b8b8b;
+    margin-top: 10px;
+}
+
+.min_exp .exp {
+    font-size: calc(var(--sp-md) + 2px);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.apply_btn {
+    margin: var(--sp-sm) 0;
+    margin-top: var(--sp-lg);
+}
+
+.apply_btn button {
+    background-color: var(--primary);
+    box-shadow: none;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+}
+
+.apply_btn button:hover {
+    background-color: #3fe9b9;
+    box-shadow: none;
+}
+
+.estm {
+    color: rgb(77, 89, 106);
+    line-height: 1.43;
+    font-weight: 400;
+    margin: var(--sp-xs) 0;
+    font-size: calc(var(--sp-md) + 2px);
+    margin-top: var(--sp-lg);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+}
+
+.job * {
+    margin: 0;
+}
+
+.job_title {
+    display: flex;
+    gap: var(--sp-md);
+}
+
+.job .name {
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.sub_text {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: var(--sp-xs);
+    text-transform: capitalize;
+}
